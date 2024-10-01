@@ -1,44 +1,63 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
-.container {
+.profile-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.profile-card {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
     text-align: center;
+}
+
+.profile-header {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    padding: 40px 0;
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    border: 5px solid white;
+}
+
+.profile-body {
+    padding: 20px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
     margin-bottom: 10px;
 }
 
-p {
+.student-id, .email, .major {
     font-size: 18px;
-    color: #666;
-    margin: 5px 0;
+    color: #777;
+    margin-bottom: 10px;
 }
 
 a {
-    color: #1e90ff;
+    color: #5b86e5;
     text-decoration: none;
 }
 
@@ -46,11 +65,16 @@ a:hover {
     text-decoration: underline;
 }
 
-.projects h2 {
-    font-size: 20px;
+.projects-section {
+    background-color: #f4f7f9;
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.projects-section h2 {
+    font-size: 22px;
     color: #333;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -58,15 +82,17 @@ ul {
     padding: 0;
 }
 
-li {
+ul li {
     margin-bottom: 10px;
 }
 
-li a {
-    font-size: 16px;
-    color: #1e90ff;
+ul li a {
+    font-size: 18px;
+    color: #36d1dc;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-li a:hover {
-    text-decoration: underline;
+ul li a:hover {
+    color: #5b86e5;
 }
