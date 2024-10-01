@@ -1,6 +1,6 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,74 +10,47 @@ body {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 20px;
-}
-
-.card {
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 400px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
-    transition: transform 0.3s ease;
-    border: 1px solid #ddd;
-}
-
-.card:hover {
-    transform: scale(1.05);
 }
 
 .profile-pic {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 6px solid #00bcd4;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.profile-pic:hover {
-    transform: rotate(360deg);
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 24px;
     color: #333;
-    margin-bottom: 15px;
-    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 p {
     font-size: 18px;
-    color: #555;
+    color: #666;
     margin: 5px 0;
 }
 
 a {
-    color: #00bcd4;
+    color: #1e90ff;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #2193b0;
+    text-decoration: underline;
 }
 
 .projects h2 {
-    font-size: 22px;
+    font-size: 20px;
     color: #333;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 ul {
@@ -86,15 +59,14 @@ ul {
 }
 
 li {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 li a {
-    font-size: 18px;
-    color: #00796b;
-    transition: color 0.3s ease;
+    font-size: 16px;
+    color: #1e90ff;
 }
 
 li a:hover {
-    color: #004d40;
+    text-decoration: underline;
 }
